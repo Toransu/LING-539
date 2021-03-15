@@ -11,3 +11,4 @@ remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 branch.main.remote=origin
 branch.main.merge=refs/heads/main
 
+docker run -it uazhlt/python-playground:python-3.7 python -c 'print("mug"[::-1])'
