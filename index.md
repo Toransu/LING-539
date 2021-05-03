@@ -7,7 +7,7 @@ As we know, one limitation of recent NLP tasks is the way to obtain **high-quali
 
 >GAN-BERT is an extension of the BERT model within the Generative Adversarial Network (GAN) framework (Goodfellow et al, 2014). In particular, the Semi-Supervised GAN (Salimans et al, 2016) is used to make the BERT fine-tuning robust in such training scenarios where obtaining annotated material is problematic.
 <p align = "center">
-<img width = 150 src = "https://raw.githubusercontent.com/crux82/ganbert/master/ganbert.jpg">
+<img width = 450 src = "https://raw.githubusercontent.com/crux82/ganbert/master/ganbert.jpg">
 </p>
 
 
