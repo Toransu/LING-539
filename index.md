@@ -1,5 +1,5 @@
 ## Technical Tutorial for GAN-BERT 
-## by Yijie Chen
+<a href="###"> Yijie Chen </a>
 
 ### Introduction of GAN-BERT
 
