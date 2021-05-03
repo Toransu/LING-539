@@ -1,5 +1,66 @@
-## Technical Tutorial for GAN-BERT
-###                           by Yijie Chen
+## Technical Tutorial for GAN-BERT by Yijie Chen
+
+###Introduction of GAN-BERT
+>GAN-BERT is an extension of the BERT model within the Generative Adversarial Network (GAN) framework (Goodfellow et al, 2014). In particular, the Semi-Supervised GAN (Salimans et al, 2016) is used to make the BERT fine-tuning robust in such training scenarios where obtaining annotated material is problematic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/Toransu/LING-539/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
