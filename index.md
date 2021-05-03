@@ -1,4 +1,5 @@
 ## Technical Tutorial for GAN-BERT
+#by Yijie Chen
 
 You can use the [editor on GitHub](https://github.com/Toransu/LING-539/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
