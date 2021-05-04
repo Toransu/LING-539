@@ -23,6 +23,8 @@ jupyter notebook spam
 </code></pre>
 </details>
 
+### Create the dataset
+I collected 270 twitters with the keyword "Tucson"
 ### Build the Multi-labeled function
 ```python
 from snorkel.labeling import labeling_function
