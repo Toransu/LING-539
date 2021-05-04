@@ -10,8 +10,10 @@ As we know, one limitation of recent NLP tasks is the way to obtain **high-quali
 <summary> Follow the steps if you did not install the snorkel </summary>
 <pre><code=python>
 #[OPTIONAL] Activate a virtual environment
+```python
 conda create --yes -n spam python=3.6
 conda activate spam
+```
 #Install requirements (both shared and tutorial-specific)
 pip install environment_kernels
 #We specify PyTorch here to ensure compatibility, but it may not be necessary.
