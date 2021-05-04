@@ -9,7 +9,8 @@ As we know, one limitation of recent NLP tasks is the way to obtain **high-quali
 <details>
 <summary> Follow the steps if you did not install the snorkel </summary>
 <pre><code>
-### [OPTIONAL] Activate a virtual environment
+
+#### [OPTIONAL] Activate a virtual environment
 conda create --yes -n spam python=3.6
 conda activate spam
 
