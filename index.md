@@ -8,7 +8,7 @@ As we know, one limitation of recent NLP tasks is the way to obtain **high-quali
 ### Install the Snorkel
 <details>
 <summary> Follow the steps if you did not install the snorkel </summary>
-
+```python
 ### [OPTIONAL] Activate a virtual environment
 conda create --yes -n spam python=3.6
 conda activate spam
@@ -20,6 +20,7 @@ conda install snorkel==0.9.5 -c conda-forge
 pip install -r spam/requirements.txt
 ### Launch the Jupyter notebook interface
 jupyter notebook spam
+```
 </details>
 
 ### Build the Multi-labeled function
@@ -29,14 +30,14 @@ from snorkel.labeling import labeling_function
 @labeling_function()
 def lf_keyword_good(x):
     return POSITIVE if "good" in x.text.lower() else ABSTAIN
-
 @labeling_function()
 def lf_keyword_bad(x):
     return NEGATIVE if "bad" in x.text.lower() else ABSTAIN@labeling_function()
+@labeling_function()
 def lf_keyword_fair(x):
     return NEUTRAL if "fair" in x.text.lower() else ABSTAIN
 ```
-sd
+
 
 
 
