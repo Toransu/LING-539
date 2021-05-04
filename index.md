@@ -22,8 +22,20 @@ pip install -r spam/requirements.txt
 jupyter notebook spam
 </details>
 
-### 
+### Build the Multi-labeled function
+from snorkel.labeling import labeling_function
+```python
+@labeling_function()
+def lf_keyword_good(x):
+    return POSITIVE if "good" in x.text.lower() else ABSTAIN
 
+@labeling_function()
+def lf_keyword_bad(x):
+    return NEGATIVE if "bad" in x.text.lower() else ABSTAIN@labeling_function()
+def lf_keyword_fair(x):
+    return NEUTRAL if "fair" in x.text.lower() else ABSTAIN
+```
+sd
 
 
 
