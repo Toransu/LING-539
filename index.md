@@ -6,8 +6,8 @@
 As we know, one limitation of recent NLP tasks is the way to obtain **high-quality annotated** data. Therefore, researchers focus on different data augmentation functions trying to increase the size of labeled training sets by applying **class-preserving transformations** to create copies of labeled data points. In this tutorial, I want to show how to create multi-annotation with **Snorkel**, which directly **leverages and exploits SME domain knowledge** of transformation operations.
 
 ### Install the Snorkel
+<details>
 <summary> Follow the steps if you did not install the snorkel </summary>
-
 #[OPTIONAL] Activate a virtual environment
 ```python
 conda create --yes -n spam python=3.6
@@ -21,8 +21,7 @@ conda install snorkel==0.9.5 -c conda-forge
 pip install -r spam/requirements.txt
 #Launch the Jupyter notebook interface
 jupyter notebook spam
-<pre><code=python>
-</code></pre>
+</details>
 
 
 
