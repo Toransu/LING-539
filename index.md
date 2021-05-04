@@ -29,10 +29,11 @@ from snorkel.labeling import labeling_function
 
 @labeling_function()
 def lf_keyword_good(x):
-    return POSITIVE if "good" in x.text.lower() else ABSTAIN
+    positive_w = ["good","optimistc","great"]
+    return POSITIVE if item in positive_w in x.text.lower() else ABSTAIN
 @labeling_function()
 def lf_keyword_bad(x):
-    return NEGATIVE if "bad" in x.text.lower() else ABSTAIN@labeling_function()
+    return NEGATIVE if "bad" in x.text.lower() else ABSTAIN
 @labeling_function()
 def lf_keyword_fair(x):
     return NEUTRAL if "fair" in x.text.lower() else ABSTAIN
