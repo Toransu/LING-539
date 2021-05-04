@@ -10,16 +10,24 @@ As we know, one limitation of recent NLP tasks is the way to obtain **high-quali
 <summary> Follow the steps if you did not install the snorkel </summary>
 
 ### [OPTIONAL] Activate a virtual environment
+<pre><code>
 conda create --yes -n spam python=3.6
 conda activate spam
+</code></pre>
 ### Install requirements (both shared and tutorial-specific)
+<pre><code>
 pip install environment_kernels
+</code></pre>
 ### We specify PyTorch here to ensure compatibility, but it may not be necessary.
+<pre><code>
 conda install pytorch==1.1.0 -c pytorch
 conda install snorkel==0.9.5 -c conda-forge
 pip install -r spam/requirements.txt
+</code></pre>
 ### Launch the Jupyter notebook interface
+<pre><code>
 jupyter notebook spam
+</code></pre>
 </details>
 
 
