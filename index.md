@@ -25,7 +25,7 @@ jupyter notebook spam
 
 ### Create the dataset
 I collected 120 twitters with the keyword "Vaccine", and manually label 20 as "Annoncement", "Positive", "Negative".
-[image]
+![train_set](https://github.com/Toransu/LING-539/blob/d6a3a7fd41f716cb0a7c2e8818dc8fc1232fbdc3/Screenshot%20from%202021-05-04%2017-49-44.png)
 
 ### Build the Multi-labeled function
 ```python
