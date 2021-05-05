@@ -42,8 +42,33 @@ def lf_keyword_annoncement(context):
     return ANNO if re.search(Anno_word, context) else ABSTAIN
 ```
 
+### Build Feature-Label Matrix
+```python
+#get label from test dataset
+FL_set = np.array(df_test['label'])
+```
+### Predict by Label
+```python
+from metal.label_model.baselines import MajorityLabelVotermv = MajorityLabelVoter()
+FL_train = mv.predict(df_test)
+```
 
+### Train the dataset
+```python
+from snorkel.labeling.model import LabelModel
+from snorkel.labeling import PandasLFApplier
 
+lfs = [lf_keyword_good, lf_keyword_bad, lf_keyword_annoncement, lf_textblob_polarity]
+
+applier = PandasLFApplier(lfs)
+L_train = applier.apply(df_train)
+
+label_model = LabelModel(cardinality=2, verbose=True)
+label_model.fit(L_train, n_epochs=200, log_freq=50, seed=123)
+df_train["label"] = label_model.predict(L=L_train, tie_break_policy="abstain")
+
+df_train = df_train[df_train.label != ABSTAIN]
+```
 
 
 
