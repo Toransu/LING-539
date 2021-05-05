@@ -24,7 +24,8 @@ jupyter notebook spam
 </details>
 
 ### Create the dataset
-I collected 270 twitters with the keyword "Tucson"
+I collected 120 twitters with the keyword "Vaccine", and manually label it as "Annoncement", "Positive", "Negative"
+
 ### Build the Multi-labeled function
 ```python
 from snorkel.labeling import labeling_function
