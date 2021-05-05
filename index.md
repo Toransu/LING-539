@@ -24,22 +24,22 @@ jupyter notebook spam
 </details>
 
 ### Create the dataset
-I collected 120 twitters with the keyword "Vaccine", and manually label it as "Annoncement", "Positive", "Negative"
+I collected 120 twitters with the keyword "Vaccine", and manually label 20 as "Annoncement", "Positive", "Negative".
+[image]
 
 ### Build the Multi-labeled function
 ```python
 from snorkel.labeling import labeling_function
 
-@labeling_function()
-def lf_keyword_good(x):
-    positive_w = ["good","optimistc","great"]
-    return POSITIVE if item in positive_w in x.text.lower() else ABSTAIN
-@labeling_function()
-def lf_keyword_bad(x):
-    return NEGATIVE if "bad" in x.text.lower() else ABSTAIN
-@labeling_function()
-def lf_keyword_fair(x):
-    return NEUTRAL if "fair" in x.text.lower() else ABSTAIN
+def lf_keyword_good(context):
+    Positive_word = r"(good|great|well|(be vaccinated)|better)"
+    return POSITIVE if re.search(Positive_word, context) else ABSTAIN
+def lf_keyword_bad(context):
+    Negative_word = r"(cancer|bad|(won't take)|traced|(won't work)|refuse|convinced)"
+    return NEGATIVE if re.search(Negative_word, context) else ABSTAIN
+def lf_keyword_annoncement(context):
+    Anno_word = r"(clinic|volunteer|offically|(find a clinic))"
+    return ANNO if re.search(Anno_word, context) else ABSTAIN
 ```
 
 
